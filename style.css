@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Nunito:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+head {
+    display: none;
+}
+
+main {
+    display: block;
+}
+
+@media only screen and(mac-width:340px) {
+    body {
+        background-color: #000000;
+    }
+}
+
+body {
+    display: block;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+    height: 85vh;
+}
+
+
+
+
+@media (max-width:425px) {
+    .sidebar {
+        gap: 0rem;
+    }
+}
+
+.sidebar {
+    height: auto;
+    flex: 0.18;
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#logoimg {
+    width: 10rem;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+@media(max-width:425px) {
+    .sidedivs {
+        gap: 0.1rem;
+    }
+}
+
+/* /*  */
+.sidedivs {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+
+}
+
+.logo-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.2rem;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    height: 1.375rem;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    padding-left: 0.8rem;
+}
+
+.logo-flex1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.7rem;
+    border-radius: 8px;
+    /* padding-bottom: 0.123rem; */
+    align-items: center;
+    font-weight: 1000;
+    font-size: 1rem;
+    width: 15rem;
+    padding-left: 0.8rem;
+    padding-bottom: 0.1rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    height: 1.8rem;
+    background-color: #212121;
+    transition: all 0.2s ease-in-out;
+}
+
+.left {
+    width: 22px;
+    margin-right: 15px;
+}
+
+.logo-flex>img {
+    height: 1.975rem;
+    width: 1.975rem;
+    margin-right: 6px;
+    align-items: center;
+
+}
+
+.album-sidedivs {
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: right;
+
+}
+
+#album-playlist {
+    gap: 0.0222em;
+
+}
+
+.favalbums {
+    padding-left: 1.5rem;
+    font-size: 18px;
+}
+
+.bg {
+
+    background-color: #fff;
+    height: 36.7px;
+    width: 36.7px;
+
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: #fff;
+    font-family: DM-sans;
+}
+
+#install-btn {
+    background-color: black;
+    color: #fff;
+    border: none !important;
+    font-size: 20px;
+    padding-left: 1rem;
+}
+
+
+
+
+.mainarea {
+    flex: 0.82;
+    padding: 0.9em;
+    background-color: rgb(21, 21, 21);
+    height: 100%;
+
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.head {
+    display: flex;
+    margin-bottom: 1.8rem;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.greatless {
+    display: flex;
+    gap: 10px;
+
+}
+
+.less {
+    color: white;
+}
+
+.great,
+.less {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: black !important;
+    text-align: center;
+    align-items: center;
+
+}
+
+.great {
+    color: gray;
+}
+
+.user {
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black !important;
+    width: 8rem;
+}
+
+.user>img {
+    width: 2.3125rem;
+    height: 2.3125rem;
+    border-radius: 2.3125rem;
+}
+
+.name {
+    margin-right: 1rem;
+    justify-content: space-around;
+
+
+}
+
+/* .fa-solid,
+.fas {
+    font-size: 900;
+}
+
+.fa-classic,
+fa-regular,
+.fa-solid,
+far,
+.fas {
+    font-family: "Font Aswesome 6 Free";
+}
+
+.fa,
+.fa-brands,
+.fa-classic,
+.fa-regular,
+.fa-sharp,
+.fa-solid,
+.fab,
+.far,
+.fas {
+    --webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+} */
+
+
+
+/* /* } */
+.maincontent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainleft {
+    flex: 1;
+    overflow-y: scroll;
+    height: 72vh;
+}
+
+@media(max-width:425px) {
+
+    .h2,
+    .see>a {
+        font-size: 14px;
+    }
+}
+
+.midcards {
+
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 28%;
+    margin: 14px 0px;
+}
+
+@media only screen and(max-width:340px) {
+    .midcards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+
+.mcard {
+    display: inline-flex;
+
+    width: 25.625rem;
+    height: 5.25rem;
+
+    background-color: rgb(48, 48, 48);
+    align-items: center;
+    border-radius: 0.25rem;
+    overflow: hidden;
+
+    flex-wrap: wrap;
+    margin: 0px 9px 9px 0px;
+}
+
+@media screen and(max-width:340px) {
+    .mcard {
+        width: 100%;
+    }
+}
+
+.simg {
+    height: 100%
+}
+
+.simg>img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+@media only screen and(max-width:340px) {
+    .mcard>h2 {
+        font-size: 12px;
+    }
+}
+
+.h2 {
+    padding-bottom: 2rem;
+}
+
+.mtext {
+    /* display: inline; */
+    margin-left: 12px;
+    /* padding-right: 30rem;
+   padding-bottom: 4rem;
+   align-items: center;
+   justify-content: center;
+   gap:3rem;
+   font-size: 20px;
+    */
+}
+
+.see {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btmcards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bcard {
+    padding: 9px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(48, 48, 48);
+    margin: 0px 15px 15px 0px;
+}
+
+.carditem>img {
+    border-radius: 0.873rem;
+    width: 8.98613rem;
+    height: 8.9955rem;
+}
+
+.carditem>h5 {
+    color: #fff;
+    font-family: DM-sans;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.02625rem;
+}
+
+.carditem>p {
+    color: #B3B3B3;
+    font-family: DM-sans;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.00938rem;
+}
+
+.foot {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(30, 215, 96);
+}
+
+.player {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+}
+
+.playerleft {
+    display: flex;
+    padding-left: 2px;
+
+    justify-content: space-between;
+
+    width: 14%;
+
+}
+
+.playedtext {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#singer {
+    color: #fff;
+    font-family: DM Sans;
+    letter-spacing: -0.026257rem;
+}
+
+@media (max-width:425) {
+    .textonly {
+        display: none;
+    }
+}
+
+.playermid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:425px) {
+
+    .midup,
+    .middown {
+        width: 12rem;
+    }
+}
+
+.midup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#foottext {
+    color: #000;
+    font-family: DM-sans;
+
+}
+
+input[type="range"] {
+    --webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.playerright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width:425) {
+    .rythmic:nth-child(1) {
+        display: none;
+
+    }
+}
+
+@media (max-width:425) {
+    .rythmic:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width:425) {
+    .rythmic:nth-child(3) {
+        display: none;
+
+    }
+}
+
+@media (max-width:425) {
+    .rythmic:nth-child(5) {
+        display: none;
+    }
+}
+
+@media (max-width:425) {
+    .rythmic:nth-child(6) {
+        display: none;
+    }
+}
+
+#foottext {
+    color: #000;
+    font-family: DM-sans;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: right;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* :host,
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+:host,
+:root {
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+} */
